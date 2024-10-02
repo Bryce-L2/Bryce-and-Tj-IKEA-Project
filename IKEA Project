@@ -14,7 +14,7 @@ int main(){
     //create variables
     char continueShopping;
     double subtotal = 0.0;  
-    const double salesTax = 6.625 / 100;  
+    const double salesTaxRate = 6.625 / 100;  
     int totalItems = 0;  
 
     do {
@@ -185,7 +185,7 @@ int main(){
 //loop meant to ask user if they want to continue or stop
     } while (continueShopping == 'y' || continueShopping == 'Y');
 
-    double salesTax = subtotal * salesTax;
+    double salesTax = subtotal * salesTaxRate;
     double total = subtotal + salesTax;
 //the price added up and printed
     cout << fixed << setprecision(2);  
